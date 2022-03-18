@@ -699,97 +699,123 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rangersprotocolweb3/web3-bzz@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-bzz/-/web3-bzz-1.0.6.tgz#2c3ae0143739c2f28244c77fbe3cfecffaa51b4a"
-  integrity sha512-gE56nyn3j6v+B/Tca9OX7y2EufsvgfIhfcXCIMfUz/j9vN7rxUOHYsBy2z3KamJ8SMwT1gqm5HAK8WbMp0HKRg==
+"@rangersprotocolweb3/web3-bzz@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-bzz/-/web3-bzz-1.0.7.tgz#0ea1fad1f402a29d2fdc01270be302dacb56667a"
+  integrity sha512-dDvmacnpLZJ/4ox6IplrzbXt54J1OiBmZmpYTVKZHBcA4tq8tkyY3W2Vgpb9UPsN9gHSNNAXjSc1w8NOUK+HYg==
   dependencies:
     "@types/node" "^12.12.6"
     got "9.6.0"
     swarm-js "^0.1.40"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-core-helpers@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-core-helpers/-/web3-core-helpers-1.0.6.tgz#f45c73a961c7da070744619a2243cf92ca1246fa"
-  integrity sha512-wicEGmRc+2XjL40XE2+DwHi784YmYPWuGBEcfpVyAXil0ZTiLAhCugXUUM/nEDbfW00NObcdSWGwH3mZaJBGRA==
+"@rangersprotocolweb3/web3-core-helpers@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-core-helpers/-/web3-core-helpers-1.0.7.tgz#3c21da42a5dfdd5860c9bd16eb824645125bea49"
+  integrity sha512-SGAk6wNTjzbH104edYhklagn2woDhfj/2VgB9ucBy/TTVf9FBcK3ksTVuDf8UgaOPdu66hDV4DlB1xDZhblT2w==
   dependencies:
-    "@rangersprotocolweb3/web3-eth-iban" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-eth-iban" "1.0.7"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-core-method@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-core-method/-/web3-core-method-1.0.6.tgz#4d506c2f8d4444e83d19ae16aabcee6191423096"
-  integrity sha512-FfUd/78gqbR4sa0nW66jHJYiukmTxLA2pXzZ8qJqqEhHY6IMXNP60DIQoZ4oDKz06+kEYy88zVUxnukONsxZlA==
+"@rangersprotocolweb3/web3-core-method@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-core-method/-/web3-core-method-1.0.7.tgz#6b9e52831189e5e7f3776b360d4961d0003f18f5"
+  integrity sha512-ZQ7G0ffb5HHkX7rk7KLG22eQPyLwAxn2gPnHHQooGFBJfvCwHwa+NA1ZNbYE4/bEyXWxF/3L3SFtqle6sS9sYg==
   dependencies:
     "@ethersproject/transactions" "^5.0.0-beta.135"
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
-    "@rangersprotocolweb3/web3-core-promievent" "1.0.6"
-    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-promievent" "1.0.7"
+    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.7"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     js-sha256 "0.9.0"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-core-promievent@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-core-promievent/-/web3-core-promievent-1.0.6.tgz#5fae5426ed9bad3266cbe6d01d6d44cf0544ce11"
-  integrity sha512-mha3rgItLIBvgK/bi8VTnxLkpP6VmtW594U+pV1X2DZEHUKWLbLxDnKIWtiGV/UxnHyeCAhrMA+nId6ZI6qLhw==
+"@rangersprotocolweb3/web3-core-method@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-core-method/-/web3-core-method-1.0.8.tgz#889173b0043d42d92ec2a11799a5691e2a3130a1"
+  integrity sha512-1aZRoqw06gCVMbEH+h1eV6PqAPilr1nXPRWXyHj/2ylkgTRh9w+OUXuOH2HgVC62Ce7Ea3ZI3mmVMpQb4VDFHQ==
+  dependencies:
+    "@ethersproject/transactions" "^5.0.0-beta.135"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-promievent" "1.0.7"
+    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.7"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
+    js-sha256 "0.9.0"
+    underscore "1.9.1"
+
+"@rangersprotocolweb3/web3-core-promievent@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-core-promievent/-/web3-core-promievent-1.0.7.tgz#3f015000163e93d41e4b4ff35339d352c53a59a6"
+  integrity sha512-pYi+sP/oaWRpXCDLoqdbofRYG9zT4m71MKouM9Yb/q7H2CWZCxrlNYdJKEb+fKr9qJ6ydC9kjuOJ/0nO7ZiknA==
   dependencies:
     eventemitter3 "4.0.4"
 
-"@rangersprotocolweb3/web3-core-requestmanager@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-core-requestmanager/-/web3-core-requestmanager-1.0.6.tgz#48bcfb1ea03cfc9f7bfc8a9bf639144eac45adf4"
-  integrity sha512-5HhT3jRb02aXY7E0D/UT4GBtHyrFj4OiDDy55fnC1pMDxSJUqADUPCYOmy+WbbdllmZqt0JD/b6ZHmUzoYVjVA==
+"@rangersprotocolweb3/web3-core-requestmanager@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-core-requestmanager/-/web3-core-requestmanager-1.0.7.tgz#c01b0528a04f029282dadd9b235869f19260acc2"
+  integrity sha512-YNdTS7dYjMBq4ONFW8COJAZsmJIKidomCsUTJjbWuME1POausMTgmI8xmCz3qziyjl2gxTw1vvZg6X6sfB/nrA==
   dependencies:
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
-    "@rangersprotocolweb3/web3-providers-http" "1.0.6"
-    "@rangersprotocolweb3/web3-providers-ipc" "1.0.6"
-    "@rangersprotocolweb3/web3-providers-ws" "1.0.6"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-providers-http" "1.0.7"
+    "@rangersprotocolweb3/web3-providers-ipc" "1.0.7"
+    "@rangersprotocolweb3/web3-providers-ws" "1.0.7"
     underscore "1.9.1"
     util "^0.12.0"
 
-"@rangersprotocolweb3/web3-core-subscriptions@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-core-subscriptions/-/web3-core-subscriptions-1.0.6.tgz#2d7d84e96f8c702fd7554f75043a5ca0bd2cfc6f"
-  integrity sha512-OHwX4a/g+OY9MlmZ/WJa4Qk54UxQeLtkMsvkPpQ3+FoPgcXygI7FW/pDbHcQRhdWjGm7ZQs4gI90bxtQzyVPJA==
+"@rangersprotocolweb3/web3-core-subscriptions@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-core-subscriptions/-/web3-core-subscriptions-1.0.7.tgz#66466db268f900759d3067ca7ec8de554f6a1352"
+  integrity sha512-KO1VU8mdOUdi+WwIRe9jBlhSrVENy01w3Y1Q0pV3q1hN9K+wobc6ti0B9X/Hsbual02zBiVr/Hk/r3+uK4AbBg==
   dependencies:
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
     eventemitter3 "4.0.4"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-core@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-core/-/web3-core-1.0.6.tgz#c0f057adf4a6a50ae6a10d2e9682195c1b6dd70b"
-  integrity sha512-UuTGnbJcJ8Hmj2zQCUdKfptCbWnjC9294rT3bXzeN7iBfSz1ZUgimqw7jnc6mNmNybKIUnGLYQ3bYaYPD1ls8A==
+"@rangersprotocolweb3/web3-core@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-core/-/web3-core-1.0.7.tgz#3a43b5ec83a9111234251fe4b50aefd274342b62"
+  integrity sha512-QjJrsSpYuFYjVCy/fQbG4CfhVqQf3OAvGXmVzfZqdhoim0//vZnox22/q7josa+opWRQtpj+f5Xc4gdd+A2y+A==
   dependencies:
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
-    "@rangersprotocolweb3/web3-core-method" "1.0.6"
-    "@rangersprotocolweb3/web3-core-requestmanager" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-method" "1.0.7"
+    "@rangersprotocolweb3/web3-core-requestmanager" "1.0.7"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     "@types/bn.js" "^4.11.5"
     "@types/node" "^12.12.6"
     bignumber.js "^9.0.0"
 
-"@rangersprotocolweb3/web3-eth-abi@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-eth-abi/-/web3-eth-abi-1.0.6.tgz#a4eed86aa646bd53f6faf8681d414a85f4520b34"
-  integrity sha512-hx+y/A8TRCfISXCdphobu/BCUOAA/+n3vLooFE1mXaTxI2dlsJkY1sMgq7wzk6H9GsKyyXA0AyxDb2vRBd1ufg==
+"@rangersprotocolweb3/web3-core@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-core/-/web3-core-1.0.8.tgz#4ae627fda951fd168fac3aa72079ab96e97e9794"
+  integrity sha512-dRAQYnhy8CCpy7SvG+iD26d70wqxaoE9ugINaweUU3n+Dxuh5Kj2cU2eMS0wp4RihYMoat4EPC8+42x7Pio1lA==
+  dependencies:
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-method" "1.0.8"
+    "@rangersprotocolweb3/web3-core-requestmanager" "1.0.7"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
+    "@types/bn.js" "^4.11.5"
+    "@types/node" "^12.12.6"
+    bignumber.js "^9.0.0"
+
+"@rangersprotocolweb3/web3-eth-abi@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-eth-abi/-/web3-eth-abi-1.0.7.tgz#d45c7eaf2fe53e0a27a0f356d0f147ea93a086ee"
+  integrity sha512-Ep132uiJS0CxdBdAQkn/gufskatAwkw5e8PmG322b5i6q1KVGIA1CXEJ8zQFCLcVbb52OsG0N1jND0s0Hj0zTg==
   dependencies:
     "@ethersproject/abi" "5.0.7"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-eth-accounts@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-eth-accounts/-/web3-eth-accounts-1.0.6.tgz#c651c22fbdaf38cabaff1b49322bd27877b32dab"
-  integrity sha512-lt2qN8p2Hc0UtIsZgT8gpzVXfdSGIdpJffnCsUz+WAp6wK1gmZLZO1Vvp6YNOi8N1oL7NUq0rKVlLhCT9CS1lw==
+"@rangersprotocolweb3/web3-eth-accounts@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-eth-accounts/-/web3-eth-accounts-1.0.8.tgz#1629cd4c1b5a4cca5f88a9f3b8d88af7ebb5ddce"
+  integrity sha512-rNqsGmcLWb9juN8DirusJPv4+FSdO4/iaEhUnYFIv9Dei8uqCwkeare5ASwBZcvwKjbhRQ7dkadiLvn6WddQRA==
   dependencies:
-    "@rangersprotocolweb3/web3-core" "1.0.6"
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
-    "@rangersprotocolweb3/web3-core-method" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-core" "1.0.8"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-method" "1.0.8"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     crypto-browserify "3.12.0"
     eth-lib "0.2.8"
     ethereumjs-common "^1.3.2"
@@ -798,125 +824,140 @@
     underscore "1.9.1"
     uuid "3.3.2"
 
-"@rangersprotocolweb3/web3-eth-contract@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-eth-contract/-/web3-eth-contract-1.0.6.tgz#8c241e4bac9fc5a72aab50f1c0fe0cbb6dfdefbe"
-  integrity sha512-JT0MIgCUl81v+YWXCSZBmd+l2QPE4rTKM088lzRkT/fiKy6jdh3MRFaFYSIHeQQH/gtFuAGsrxz1eYPQVFDAnA==
+"@rangersprotocolweb3/web3-eth-contract@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-eth-contract/-/web3-eth-contract-1.0.7.tgz#463b72aab30ccdd102052b14926bc46f7d34f137"
+  integrity sha512-xea61AkS80nOsYQCMUjb6FMFi1igzNB64ofIBrs2mh/tJm9AOgq9yDuHPeQnqX5IVPX2kYXjhynSTvcQz0B0HA==
   dependencies:
-    "@rangersprotocolweb3/web3-core" "1.0.6"
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
-    "@rangersprotocolweb3/web3-core-method" "1.0.6"
-    "@rangersprotocolweb3/web3-core-promievent" "1.0.6"
-    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-abi" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-core" "1.0.7"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-method" "1.0.7"
+    "@rangersprotocolweb3/web3-core-promievent" "1.0.7"
+    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.7"
+    "@rangersprotocolweb3/web3-eth-abi" "1.0.7"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     "@types/bn.js" "^4.11.5"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-eth-ens@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-eth-ens/-/web3-eth-ens-1.0.6.tgz#afca08545dced3c0c51ad83ac0848eb83d90066a"
-  integrity sha512-qXNo0b9mXzdDqcjBk73BWejeaylqlSfSDXxyTsOVgE3y1zL70lY+Vhq8seJJt4lam6ZvU98lt93TNP8XBLETmA==
+"@rangersprotocolweb3/web3-eth-contract@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-eth-contract/-/web3-eth-contract-1.0.8.tgz#ab32b55346a77bd802067519ebcaa61ee4476ee8"
+  integrity sha512-G3MIE1YA96Dm/3K3uYbap34DPSS/BH+0Af17Iko2xJ9ADZW08OpxRxVEGUhiuI04Ax923HNJm+GG4FKfnMgVwQ==
   dependencies:
-    "@rangersprotocolweb3/web3-core" "1.0.6"
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
-    "@rangersprotocolweb3/web3-core-promievent" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-abi" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-contract" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-core" "1.0.8"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-method" "1.0.8"
+    "@rangersprotocolweb3/web3-core-promievent" "1.0.7"
+    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.7"
+    "@rangersprotocolweb3/web3-eth-abi" "1.0.7"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
+    "@types/bn.js" "^4.11.5"
+    underscore "1.9.1"
+
+"@rangersprotocolweb3/web3-eth-ens@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-eth-ens/-/web3-eth-ens-1.0.7.tgz#7b0cefd9fe95e37d8c7f32b6b2e8f86f70b1f2dd"
+  integrity sha512-8ZDo8hm4jM93e86xMN4tRaWETIkd561PBHjJrlNez9Hk1O8S4NF/Cavyjbrlv3vKQvNr+VHIaMRbO8s61mkvbA==
+  dependencies:
+    "@rangersprotocolweb3/web3-core" "1.0.7"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-promievent" "1.0.7"
+    "@rangersprotocolweb3/web3-eth-abi" "1.0.7"
+    "@rangersprotocolweb3/web3-eth-contract" "1.0.7"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     content-hash "^2.5.2"
     eth-ens-namehash "2.0.8"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-eth-iban@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-eth-iban/-/web3-eth-iban-1.0.6.tgz#5633dcb57990dd37ca9d597dbcfa3199e4d5bfca"
-  integrity sha512-zoxQ9meZmTejdmL4vYFBVq9UZDNMCFZ/aHJ+g8GQRnvrqCYh7eKdQbblmUI5WfppqEHBxSJ8iLH16VKjn3+jtA==
+"@rangersprotocolweb3/web3-eth-iban@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-eth-iban/-/web3-eth-iban-1.0.7.tgz#e688d3884a3e07fec810fc7288726d7d3a50f3db"
+  integrity sha512-SFowxi8aadBrWz/HjjmnnaSeuyBSI79FiJkWDlG0quei66MAdCIojsH3r4b2OdVDjxvUJ9YOWEfNJbOigx7/lg==
   dependencies:
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     bn.js "^4.11.9"
 
-"@rangersprotocolweb3/web3-eth-personal@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-eth-personal/-/web3-eth-personal-1.0.6.tgz#7f4705d7a41af2147036759d3558826c69dc9583"
-  integrity sha512-Ol0VpjCv6J8NGh5BbI950Tgp7r5lTd+zzDYGIzxCDCgOE9Ioa1mp5urVoDExF2xRG0FDaW0rWQ/uxj1WM785aw==
+"@rangersprotocolweb3/web3-eth-personal@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-eth-personal/-/web3-eth-personal-1.0.8.tgz#db6f769faa35887462d4fa69332b4e217c7983ff"
+  integrity sha512-WTwLWPQKTJvGPbjUa+4cUc0wWXf2GnPOEyisBKj+lNQwTkvDvOG58jtglCgUUgLNyDO1X8GJNTC85tO8uglaig==
   dependencies:
-    "@rangersprotocolweb3/web3-core" "1.0.6"
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
-    "@rangersprotocolweb3/web3-core-method" "1.0.6"
-    "@rangersprotocolweb3/web3-net" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-core" "1.0.8"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-method" "1.0.8"
+    "@rangersprotocolweb3/web3-net" "1.0.8"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     "@types/node" "^12.12.6"
 
-"@rangersprotocolweb3/web3-eth@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-eth/-/web3-eth-1.0.6.tgz#e4f7aaa5dd4ac379d0b01c96ee778b6e48e2517c"
-  integrity sha512-UdG/vxmljCjFJ5cOdrx8CyZgY9MZDe207BO1IMPZmxApImgAI1tS8LRZtzFRfqWZwx35YxrNS3sniIwemUcQBQ==
+"@rangersprotocolweb3/web3-eth@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-eth/-/web3-eth-1.0.8.tgz#95c993d1f84764987b6eadfbf03cccfb8ce78ee6"
+  integrity sha512-5sMeoBc0RFBuO3Js0p6N42TIOcf+Q3CcdqEnUK/q9gssbWnfIWUDYpJH7c0AbsbdvFUjk46OWum52+49bMXmsg==
   dependencies:
-    "@rangersprotocolweb3/web3-core" "1.0.6"
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
-    "@rangersprotocolweb3/web3-core-method" "1.0.6"
-    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-abi" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-accounts" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-contract" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-ens" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-iban" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-personal" "1.0.6"
-    "@rangersprotocolweb3/web3-net" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-core" "1.0.8"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
+    "@rangersprotocolweb3/web3-core-method" "1.0.8"
+    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.7"
+    "@rangersprotocolweb3/web3-eth-abi" "1.0.7"
+    "@rangersprotocolweb3/web3-eth-accounts" "1.0.8"
+    "@rangersprotocolweb3/web3-eth-contract" "1.0.8"
+    "@rangersprotocolweb3/web3-eth-ens" "1.0.7"
+    "@rangersprotocolweb3/web3-eth-iban" "1.0.7"
+    "@rangersprotocolweb3/web3-eth-personal" "1.0.8"
+    "@rangersprotocolweb3/web3-net" "1.0.8"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-net@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-net/-/web3-net-1.0.6.tgz#8cac51b8df62548c89176f63520d2b3b8f3f03cb"
-  integrity sha512-yGJwKq9KOWMQxxTnkUVqfFX+ltQayPpjOqU4W6VOAEVpakwgFwpqfksefOmqMcjKPywe2fAzI79vZ27vUdRjFA==
+"@rangersprotocolweb3/web3-net@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-net/-/web3-net-1.0.8.tgz#4498e19c3314bcf61e0986380e5df09b4f13d246"
+  integrity sha512-AcHsosx+O/RjCjCTUiWFcvqAXxaiik7jMC8rc5lNQ0cEKMwM3Nprj9aUAL0mBuNF47L4cl2dweiDSprY4n1CNg==
   dependencies:
-    "@rangersprotocolweb3/web3-core" "1.0.6"
-    "@rangersprotocolweb3/web3-core-method" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-core" "1.0.8"
+    "@rangersprotocolweb3/web3-core-method" "1.0.8"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
 
-"@rangersprotocolweb3/web3-providers-http@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-providers-http/-/web3-providers-http-1.0.6.tgz#72b095a179872a683da85c9e65e5c750293a6ef4"
-  integrity sha512-oKtH7DEpXx9uVQE4kixxMxgVN78my1rQGAID1gUFZb3HeX2ircFasU7zhLdtLDh7kGZeqwnvUNxKgVwMoupjHg==
+"@rangersprotocolweb3/web3-providers-http@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-providers-http/-/web3-providers-http-1.0.7.tgz#85a2a04a1f07cf4a682b310f26a80168014d8999"
+  integrity sha512-CMbxlgjumPtwMARuM4KLzGWx4c4MWH9K2kyAvNisbA3M1r6A/VDheoHC19MR2mkuN3OPrGmuokeRo26cXTzMPQ==
   dependencies:
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
     xhr2-cookies "1.1.0"
 
-"@rangersprotocolweb3/web3-providers-ipc@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-providers-ipc/-/web3-providers-ipc-1.0.6.tgz#83a2eada0d69ef9066b971f6bb1fa36ae15c40eb"
-  integrity sha512-DoblE3jR1lt9MDMPYN5ztyBiwJTCD2HqnaMS1pKRyEVEXoOBlrlgF0t02QcK5OOvDl/vArBhJVFgRa82ro5X2w==
+"@rangersprotocolweb3/web3-providers-ipc@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-providers-ipc/-/web3-providers-ipc-1.0.7.tgz#a081d86a70963bb22b5dca8eed089476a7678580"
+  integrity sha512-v5PnSEN3Qs0ValibL1Ok51fU7pZmkL0GFntEUeNk7hCVs9gm9dbZ7EAJhck8BzhfDeF9uQyIUOXRKTj0KHb1hg==
   dependencies:
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
     oboe "2.1.5"
     underscore "1.9.1"
 
-"@rangersprotocolweb3/web3-providers-ws@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-providers-ws/-/web3-providers-ws-1.0.6.tgz#096d4deaf31a181dbe4edc489204003645dccd6c"
-  integrity sha512-tURba47Eiwbstvd8zH+pKL4mGM7wkx2wHNIyIoRtF+MveJ+F0le6B7Io7TgHcDUOndV0XFngryVDj99EHexfaA==
+"@rangersprotocolweb3/web3-providers-ws@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-providers-ws/-/web3-providers-ws-1.0.7.tgz#871b2c06893c0c8bc222558640625d6f86f2450a"
+  integrity sha512-iRJ6UfYDloGdSUUI2zFLZBwYmqhU56+Ecin5DhmA1JiDSXlhPj5top4oPg88vBkivJW0ayaOtOgulowylHeuaw==
   dependencies:
-    "@rangersprotocolweb3/web3-core-helpers" "1.0.6"
+    "@rangersprotocolweb3/web3-core-helpers" "1.0.7"
     eventemitter3 "4.0.4"
     underscore "1.9.1"
     websocket "^1.0.32"
 
-"@rangersprotocolweb3/web3-shh@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-shh/-/web3-shh-1.0.6.tgz#a54cfbb8d47a19afa4ecca25cc909e9f9ecbcae7"
-  integrity sha512-EuGrbHsSKnQ0IzhLZ4njg3n18axgOvC2Pb9j2m7xYyillvUFnam99HJTl7DC1MiegtoXMKN2jZQr8Z8RJMkgbQ==
+"@rangersprotocolweb3/web3-shh@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-shh/-/web3-shh-1.0.8.tgz#b5fdfafa9642b8e169910f8d3218e24cdf3cf2a5"
+  integrity sha512-60D7jWbmoMtaQGjnWWTfrAhWm4zb0BbbrHO/PEJj19lw+OdY0z7yA2hQuTVzZrnNlvlk8VztimtZ69xCGtUnRw==
   dependencies:
-    "@rangersprotocolweb3/web3-core" "1.0.6"
-    "@rangersprotocolweb3/web3-core-method" "1.0.6"
-    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.6"
-    "@rangersprotocolweb3/web3-net" "1.0.6"
+    "@rangersprotocolweb3/web3-core" "1.0.8"
+    "@rangersprotocolweb3/web3-core-method" "1.0.8"
+    "@rangersprotocolweb3/web3-core-subscriptions" "1.0.7"
+    "@rangersprotocolweb3/web3-net" "1.0.8"
 
-"@rangersprotocolweb3/web3-utils@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3-utils/-/web3-utils-1.0.6.tgz#30f8b898cbc6cd1ae75dbfd9bf670947400207cf"
-  integrity sha512-ILsBBe/+PHo28BX4GYD1WtBvjGctkabLHwBsdR+bAZ1aO0+ovnYLwmcvw8Z2xQff15f7EXNcBL1nxeCFLD4DQw==
+"@rangersprotocolweb3/web3-utils@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3-utils/-/web3-utils-1.0.7.tgz#295a5a9e123bc2c3391832df172c23f090da0c10"
+  integrity sha512-mYu7ktO5D7qzOGfCNu6220WAmU9zFb4c02L/gPP86CaC2fv0kuSSRadCdQAmCQZ5P5Pb6L3gMHdH6e4dVZaoZA==
   dependencies:
     bn.js "^4.11.9"
     eth-lib "0.2.8"
@@ -927,18 +968,18 @@
     underscore "1.9.1"
     utf8 "3.0.0"
 
-"@rangersprotocolweb3/web3@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@rangersprotocolweb3/web3/-/web3-1.0.6.tgz#e57c90a2eaaa5b2ede49454b4ec0b264aaa2f485"
-  integrity sha512-Y8USg6cmxdI16wcXcgmdXr3qFrs+zeztjJOcn3WlutFRpL6vjp4XgoNkBsZXgWPiM5goI6QphkfClCgOjjv7FA==
+"@rangersprotocolweb3/web3@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@rangersprotocolweb3/web3/-/web3-1.0.8.tgz#3d846ef9d5aed77061a5f8f0801c69b33de831c5"
+  integrity sha512-VOdoTmR2Wp2nY/MmDbNDm4oV7ROih4aAZAQEkworr/OF07ZWo+XS6aqcgqu2mO6v17SMHCTJ9oSHGsV+EBCSuw==
   dependencies:
-    "@rangersprotocolweb3/web3-bzz" "1.0.6"
-    "@rangersprotocolweb3/web3-core" "1.0.6"
-    "@rangersprotocolweb3/web3-eth" "1.0.6"
-    "@rangersprotocolweb3/web3-eth-personal" "1.0.6"
-    "@rangersprotocolweb3/web3-net" "1.0.6"
-    "@rangersprotocolweb3/web3-shh" "1.0.6"
-    "@rangersprotocolweb3/web3-utils" "1.0.6"
+    "@rangersprotocolweb3/web3-bzz" "1.0.7"
+    "@rangersprotocolweb3/web3-core" "1.0.8"
+    "@rangersprotocolweb3/web3-eth" "1.0.8"
+    "@rangersprotocolweb3/web3-eth-personal" "1.0.8"
+    "@rangersprotocolweb3/web3-net" "1.0.8"
+    "@rangersprotocolweb3/web3-shh" "1.0.8"
+    "@rangersprotocolweb3/web3-utils" "1.0.7"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"

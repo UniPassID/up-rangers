@@ -1,6 +1,6 @@
 {
   "name": "up-rangers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "unipass sdk for rangers",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -40,7 +40,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@rangersprotocolweb3/web3": "^1.0.6",
+    "@rangersprotocolweb3/web3": "^1.0.8",
     "axios": "^0.26.0",
     "up-core-test": "^0.1.7"
   },

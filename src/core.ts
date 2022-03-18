@@ -77,11 +77,6 @@ export class UPRangers {
       this._config.rangersRPC[2]
     );
 
-    // add default private key for query contract status on rangers
-    this._web3.eth.accounts.wallet.add(
-      '0x79682c20bbcaf7fcf18eb0c69b133c872227ceb88971090e7f2242c80cd54d18'
-    );
-
     this._entryContract = new this._web3.eth.Contract(
       ENTRY_ABI.abi as AbiItem[],
       this._config.userInfoContract
@@ -93,7 +88,7 @@ export class UPRangers {
    * @returns
    */
   private getOption() {
-    return { from: this._web3.eth.accounts.wallet[0].address };
+    return {};
   }
 
   /**
