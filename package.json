@@ -42,7 +42,7 @@
   "dependencies": {
     "@rangersprotocolweb3/web3": "^1.0.8",
     "axios": "^0.26.0",
-    "up-core-test": "^0.1.7"
+    "up-core-test": "/Users/johnz/work/unipass-v3/up-core"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",

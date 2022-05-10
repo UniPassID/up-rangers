@@ -1,206 +1,326 @@
 export const ASSET_ABI = {
   abi: [
     {
-      stateMutability: 'payable',
-      type: 'fallback',
-    },
-    {
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
         {
-          internalType: 'address payable',
-          name: 'to',
-          type: 'address',
-        },
-        {
-          internalType: 'uint256',
-          name: 'value',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'callData',
-          type: 'bytes',
-        },
-        {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
       ],
-      name: 'call',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "E_Call_Failed",
+      "type": "event"
     },
     {
-      inputs: [],
-      name: 'chainID',
-      outputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'uint8',
-          name: '',
-          type: 'uint8',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "E_Call_Success",
+      "type": "event"
     },
     {
-      inputs: [],
-      name: 'entryContract',
-      outputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'contract Entry',
-          name: '',
-          type: 'address',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "E_Transfer_Native",
+      "type": "event"
     },
     {
-      inputs: [],
-      name: 'g_nonce',
-      outputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "E_Transfer_Token",
+      "type": "event"
     },
     {
-      inputs: [
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [],
+      "name": "assetNonce",
+      "outputs": [
         {
-          internalType: 'address',
-          name: '_addr',
-          type: 'address',
-        },
-        {
-          internalType: 'bytes32',
-          name: '_registerEmail',
-          type: 'bytes32',
-        },
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
       ],
-      name: 'init',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [],
-      name: 'registerEmail',
-      outputs: [
+      "inputs": [],
+      "name": "chainID",
+      "outputs": [
         {
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
-        },
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [],
+      "name": "entryContract",
+      "outputs": [
         {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
-        },
-        {
-          internalType: 'address payable',
-          name: 'to',
-          type: 'address',
-        },
-        {
-          internalType: 'uint256',
-          name: 'amount',
-          type: 'uint256',
-        },
-        {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "internalType": "contract Entry",
+          "name": "",
+          "type": "address"
+        }
       ],
-      name: 'transferEth',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
         },
         {
-          internalType: 'address',
-          name: 'token',
-          type: 'address',
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
         },
         {
-          internalType: 'address payable',
-          name: 'to',
-          type: 'address',
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
         },
         {
-          internalType: 'uint256',
-          name: 'amount',
-          type: 'uint256',
+          "internalType": "bytes",
+          "name": "callData",
+          "type": "bytes"
         },
         {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
+          "internalType": "address",
+          "name": "feeToken",
+          "type": "address"
         },
         {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
+          "internalType": "uint256",
+          "name": "feeAmount",
+          "type": "uint256"
         },
         {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
         },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
       ],
-      name: 'transferToken',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "execute",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      stateMutability: 'payable',
-      type: 'receive',
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_entryAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_registerEmail",
+          "type": "bytes32"
+        }
+      ],
+      "name": "init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
+    {
+      "inputs": [],
+      "name": "registerEmail",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "feeToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feeAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferNativeToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "feeToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feeAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
   ],
 };

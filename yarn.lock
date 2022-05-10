@@ -8079,10 +8079,11 @@ unpipe@1.0.0, unpipe@~1.0.0:
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
 
-up-core-test@^0.1.7:
+up-core-test@/Users/johnz/work/unipass-v3/up-core:
   version "0.1.7"
-  resolved "https://registry.yarnpkg.com/up-core-test/-/up-core-test-0.1.7.tgz#5a5c7685ef0c61da5ebae3c6c2190077432092aa"
-  integrity sha512-RD9HeJDMjA3GUfC6qqLueOB+ToVCwqgGhdK7VwRGU+tPwtYdVL+utKWbHH/hhUg6gBoFGX4hUhz3wnBkPHqqJQ==
+
+"up-core-test@file:../up-core":
+  version "0.1.7"
 
 update-notifier@^5.0.1:
   version "5.1.0"

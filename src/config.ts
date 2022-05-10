@@ -17,7 +17,8 @@ export const UP_TEST_CONFIG: UPRangersConfig = {
     'wss://robin.rangersprotocol.com/pubhub/api/writer',
     'wss://robin-sub.rangersprotocol.com',
   ],
-  unipassRPC: 'https://t.sync.unipass.id/api/v1/transaction/asset',
+  // unipassRPC: 'https://t.sync.unipass.id/api/v1/transaction/asset',
+  unipassRPC: 'https://t.sync.unipass.id/api/v2/tx',
   chainID: ChainID.testnet,
   userInfoContract: '',
 };

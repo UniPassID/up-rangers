@@ -83,16 +83,20 @@ export function convertUPAuthResponse(resp: UPAuthResponse): SignResponse {
  */
 export async function submitTransaction(
   url: string,
-  email: string,
-  method: string,
-  params: (string | number)[]
+  params: any
 ): Promise<string> {
-  const resp = await axios.post(url, {
-    email,
-    method,
-    params,
-  });
+  console.dir(params);
+  const resp = await axios.post(url, params);
+  console.log('resp.data', resp.data);
 
-  const { transactionHash } = resp.data.data;
-  return transactionHash;
+  switch (resp.status) {
+    case 200:
+      const transactionHash = resp.data;
+      return transactionHash;
+    case 400:
+      throw new Error(`transaction ${resp.data} submitted failed`);
+    case 503:
+    default:
+      throw new Error(`transaction params error`);
+  }
 }

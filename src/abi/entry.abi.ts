@@ -1,1059 +1,1126 @@
 export const ENTRY_ABI = {
   abi: [
     {
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes32',
-          name: 'username',
-          type: 'bytes32',
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
         },
         {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
-        },
-        {
-          internalType: 'uint256',
-          name: 'newkeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newKeySig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
       ],
-      name: 'addLocalKey',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "E_AddLocalKey",
+      "type": "event"
     },
     {
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'bytes32',
-          name: 'username',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
-        },
-        {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
       ],
-      name: 'cancelRecovery',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "E_CancelRecovery",
+      "type": "event"
     },
     {
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
       ],
-      name: 'completeRecovery',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "E_CompleteRecovery",
+      "type": "event"
     },
     {
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes32',
-          name: 'username',
-          type: 'bytes32',
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
         },
         {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
-        },
-        {
-          internalType: 'uint256',
-          name: 'delKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'delKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
       ],
-      name: 'delLocalKey',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "E_DelLocalKey",
+      "type": "event"
     },
     {
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'address',
-          name: 'logicaddr',
-          type: 'address',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
       ],
-      stateMutability: 'nonpayable',
-      type: 'constructor',
+      "name": "E_QuickAddLocalKey",
+      "type": "event"
     },
     {
-      anonymous: false,
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
         {
-          indexed: false,
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
+          "indexed": false,
+          "internalType": "string",
+          "name": "",
+          "type": "string"
         },
         {
-          indexed: false,
-          internalType: 'bytes',
-          name: '',
-          type: 'bytes',
+          "indexed": false,
+          "internalType": "string",
+          "name": "",
+          "type": "string"
         },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
       ],
-      name: 'event_addLocalKey',
-      type: 'event',
+      "name": "E_QuickRegister",
+      "type": "event"
     },
     {
-      anonymous: false,
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
       ],
-      name: 'event_cancelRecovery',
-      type: 'event',
+      "name": "E_Register",
+      "type": "event"
     },
     {
-      anonymous: false,
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
-        },
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
       ],
-      name: 'event_completeRecovery',
-      type: 'event',
+      "name": "E_SetAdmin",
+      "type": "event"
     },
     {
-      anonymous: false,
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
-        },
-        {
-          indexed: false,
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
-        },
-        {
-          indexed: false,
-          internalType: 'bytes',
-          name: '',
-          type: 'bytes',
-        },
+          "indexed": false,
+          "internalType": "bool",
+          "name": "timeLockSwitch",
+          "type": "bool"
+        }
       ],
-      name: 'event_delLocalKey',
-      type: 'event',
+      "name": "E_SetTimeLockSwitch",
+      "type": "event"
     },
     {
-      anonymous: false,
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
-        },
-        {
-          indexed: false,
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
-        },
-        {
-          indexed: false,
-          internalType: 'bytes',
-          name: '',
-          type: 'bytes',
-        },
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
       ],
-      name: 'event_quickAddLocalKey',
-      type: 'event',
+      "name": "E_StartRecovery",
+      "type": "event"
     },
     {
-      anonymous: false,
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
         {
-          indexed: false,
-          internalType: 'string',
-          name: '',
-          type: 'string',
-        },
-        {
-          indexed: false,
-          internalType: 'string',
-          name: '',
-          type: 'string',
-        },
-        {
-          indexed: false,
-          internalType: 'address',
-          name: '',
-          type: 'address',
-        },
+          "indexed": false,
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
       ],
-      name: 'event_quickregister',
-      type: 'event',
+      "name": "E_UpdateQuickLogin",
+      "type": "event"
     },
     {
-      anonymous: false,
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
         },
         {
-          indexed: false,
-          internalType: 'string',
-          name: '',
-          type: 'string',
+          "indexed": false,
+          "internalType": "bytes32[]",
+          "name": "",
+          "type": "bytes32[]"
         },
         {
-          indexed: false,
-          internalType: 'string',
-          name: '',
-          type: 'string',
-        },
-        {
-          indexed: false,
-          internalType: 'address',
-          name: '',
-          type: 'address',
-        },
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
       ],
-      name: 'event_register',
-      type: 'event',
+      "name": "E_UpdateRecoveryEmail",
+      "type": "event"
     },
     {
-      anonymous: false,
-      inputs: [
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
+        {
+          "internalType": "bytes32",
+          "name": "username",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "newKeyType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "newKey",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "newKeySig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
       ],
-      name: 'event_startRecovery',
-      type: 'event',
+      "name": "addLocalKey",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      anonymous: false,
-      inputs: [
+      "inputs": [
         {
-          indexed: false,
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
         {
-          indexed: false,
-          internalType: 'bytes32[]',
-          name: '',
-          type: 'bytes32[]',
+          "internalType": "bytes32",
+          "name": "username",
+          "type": "bytes32"
         },
         {
-          indexed: false,
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
         },
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
       ],
-      name: 'event_updateRecoveryEmail',
-      type: 'event',
+      "name": "cancelRecovery",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'bytes32',
-          name: 'username',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
-        },
-        {
-          internalType: 'uint256',
-          name: 'newKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newKeySig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'adminSig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes[]',
-          name: 'emailHeaders',
-          type: 'bytes[]',
-        },
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        }
       ],
-      name: 'quickAddLocalKey',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "completeRecovery",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
         {
-          internalType: 'string',
-          name: 'originUsername',
-          type: 'string',
+          "internalType": "bytes32",
+          "name": "username",
+          "type": "bytes32"
         },
         {
-          internalType: 'uint8',
-          name: 'keyType',
-          type: 'uint8',
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
         },
         {
-          internalType: 'bytes',
-          name: 'key',
-          type: 'bytes',
+          "internalType": "uint256",
+          "name": "delKeyIndex",
+          "type": "uint256"
         },
         {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
         },
         {
-          internalType: 'bytes',
-          name: 'adminSig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'string',
-          name: 'source',
-          type: 'string',
-        },
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
       ],
-      name: 'quickRegister',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "delLocalKey",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "internalType": "address",
+          "name": "_logic",
+          "type": "address"
         },
         {
-          internalType: 'string',
-          name: 'originUsername',
-          type: 'string',
+          "internalType": "address",
+          "name": "_admin",
+          "type": "address"
         },
         {
-          internalType: 'bytes',
-          name: 'emailHeader',
-          type: 'bytes',
-        },
-        {
-          internalType: 'uint256',
-          name: 'keyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'key',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'string',
-          name: 'source',
-          type: 'string',
-        },
+          "internalType": "uint8",
+          "name": "_chainID",
+          "type": "uint8"
+        }
       ],
-      name: 'register',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes32',
-          name: 'username',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "username",
+          "type": "bytes32"
         },
         {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
         },
         {
-          internalType: 'bool',
-          name: 'resetKeys',
-          type: 'bool',
+          "internalType": "uint256",
+          "name": "newKeyType",
+          "type": "uint256"
         },
         {
-          internalType: 'uint256',
-          name: 'newKeyType',
-          type: 'uint256',
+          "internalType": "bytes",
+          "name": "newKey",
+          "type": "bytes"
         },
         {
-          internalType: 'bytes',
-          name: 'newKey',
-          type: 'bytes',
+          "internalType": "bytes",
+          "name": "newKeySig",
+          "type": "bytes"
         },
         {
-          internalType: 'bytes',
-          name: 'newKeySig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes[]',
-          name: 'emailHeaders',
-          type: 'bytes[]',
-        },
+          "internalType": "bytes[]",
+          "name": "emailHeaders",
+          "type": "bytes[]"
+        }
       ],
-      name: 'startRecovery',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "quickAddLocalKey",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes32',
-          name: 'username',
-          type: 'bytes32',
+          "internalType": "string",
+          "name": "originUsername",
+          "type": "string"
         },
         {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
+          "internalType": "uint256",
+          "name": "keyType",
+          "type": "uint256"
         },
         {
-          internalType: 'bool',
-          name: 'quickLogin',
-          type: 'bool',
+          "internalType": "bytes",
+          "name": "key",
+          "type": "bytes"
         },
         {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
         },
         {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "internalType": "string",
+          "name": "source",
+          "type": "string"
+        }
       ],
-      name: 'updateQuickLogin',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "quickRegister",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes32',
-          name: 'username',
-          type: 'bytes32',
+          "internalType": "string",
+          "name": "originUsername",
+          "type": "string"
         },
         {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
+          "internalType": "bytes",
+          "name": "emailHeader",
+          "type": "bytes"
         },
         {
-          internalType: 'bytes32[]',
-          name: 'emails',
-          type: 'bytes32[]',
+          "internalType": "uint256",
+          "name": "keyType",
+          "type": "uint256"
         },
         {
-          internalType: 'uint256',
-          name: 'threshold',
-          type: 'uint256',
+          "internalType": "bytes",
+          "name": "key",
+          "type": "bytes"
         },
         {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
         },
         {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "internalType": "string",
+          "name": "source",
+          "type": "string"
+        }
       ],
-      name: 'updateRecoveryEmail',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "register",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'bytes32',
-          name: 'username',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
-        },
-        {
-          internalType: 'uint256',
-          name: 'newKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newKeySig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'adminSig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes[]',
-          name: 'emailHeaders',
-          type: 'bytes[]',
-        },
+          "internalType": "address",
+          "name": "_newAdmin",
+          "type": "address"
+        }
       ],
-      name: '_quickAddLocalKeyCheck',
-      outputs: [],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "setAdmin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newKeySig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'emailHeader',
-          type: 'bytes',
-        },
+          "internalType": "bool",
+          "name": "_switch",
+          "type": "bool"
+        }
       ],
-      name: '_quickAddLocalKeyCheck2',
-      outputs: [
-        {
-          internalType: 'bool',
-          name: '',
-          type: 'bool',
-        },
-      ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "setTimeLockSwitch",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes',
-          name: 'newKeySig',
-          type: 'bytes',
+          "internalType": "bytes32",
+          "name": "username",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes[]',
-          name: 'emailHeaders',
-          type: 'bytes[]',
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
         },
+        {
+          "internalType": "bool",
+          "name": "resetKeys",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "newKeyType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "newKey",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "newKeySig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes[]",
+          "name": "emailHeaders",
+          "type": "bytes[]"
+        }
       ],
-      name: '_startRecoveryCheck',
-      outputs: [],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "startRecovery",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [],
-      name: 'admin',
-      outputs: [
+      "inputs": [
         {
-          internalType: 'uint256',
-          name: 'keyType',
-          type: 'uint256',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes',
-          name: 'key',
-          type: 'bytes',
+          "internalType": "bytes32",
+          "name": "username",
+          "type": "bytes32"
         },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "quickLogin",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "updateQuickLogin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [],
-      name: 'chainID',
-      outputs: [
+      "inputs": [
         {
-          internalType: 'uint8',
-          name: '',
-          type: 'uint8',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
+        {
+          "internalType": "bytes32",
+          "name": "username",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "emails",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "threshold",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "updateRecoveryEmail",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
       ],
-      name: 'getUserKeys',
-      outputs: [
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "chainID",
+      "outputs": [
         {
-          components: [
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "keyType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "key",
+          "type": "bytes"
+        }
+      ],
+      "name": "checkUserKey",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getUserKeys",
+      "outputs": [
+        {
+          "components": [
             {
-              internalType: 'uint256',
-              name: 'keyType',
-              type: 'uint256',
+              "internalType": "uint256",
+              "name": "keyType",
+              "type": "uint256"
             },
             {
-              internalType: 'bytes',
-              name: 'key',
-              type: 'bytes',
-            },
+              "internalType": "bytes",
+              "name": "key",
+              "type": "bytes"
+            }
           ],
-          internalType: 'struct Entry.PubKey[]',
-          name: 'keys',
-          type: 'tuple[]',
-        },
+          "internalType": "struct UnipassUtils.PubKey[]",
+          "name": "keys",
+          "type": "tuple[]"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        }
       ],
-      name: 'isUserKey',
-      outputs: [
+      "name": "getUserName",
+      "outputs": [
         {
-          internalType: 'bool',
-          name: '',
-          type: 'bool',
-        },
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [],
-      name: 'logic',
-      outputs: [
+      "inputs": [
         {
-          internalType: 'contract Logic',
-          name: '',
-          type: 'address',
-        },
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "getUserNonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'uint256',
-          name: 'newAdminKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newAdminKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'newadminSig',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'oldadminSig',
-          type: 'bytes',
-        },
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        }
       ],
-      name: 'setAdmin',
-      outputs: [],
-      stateMutability: 'view',
-      type: 'function',
-    },
-    {
-      inputs: [],
-      name: 'totalUsers',
-      outputs: [
+      "name": "getUserPendingState",
+      "outputs": [
         {
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
-        },
-      ],
-      stateMutability: 'view',
-      type: 'function',
-    },
-    {
-      inputs: [
-        {
-          internalType: 'bytes32',
-          name: '',
-          type: 'bytes32',
-        },
-      ],
-      name: 'users',
-      outputs: [
-        {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'uint256',
-          name: 'nonce',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bool',
-          name: 'quickLogin',
-          type: 'bool',
-        },
-        {
-          components: [
+          "components": [
             {
-              internalType: 'uint256',
-              name: 'threshold',
-              type: 'uint256',
-            },
-            {
-              internalType: 'bytes32[]',
-              name: 'emails',
-              type: 'bytes32[]',
-            },
-          ],
-          internalType: 'struct Entry.RecoveryEmail',
-          name: 'recoveryEmails',
-          type: 'tuple',
-        },
-        {
-          internalType: 'address',
-          name: 'assetContractAddress',
-          type: 'address',
-        },
-        {
-          internalType: 'bool',
-          name: 'isRecovering',
-          type: 'bool',
-        },
-        {
-          components: [
-            {
-              components: [
+              "components": [
                 {
-                  internalType: 'uint256',
-                  name: 'keyType',
-                  type: 'uint256',
+                  "internalType": "uint256",
+                  "name": "keyType",
+                  "type": "uint256"
                 },
                 {
-                  internalType: 'bytes',
-                  name: 'key',
-                  type: 'bytes',
-                },
+                  "internalType": "bytes",
+                  "name": "key",
+                  "type": "bytes"
+                }
               ],
-              internalType: 'struct Entry.PubKey',
-              name: 'key',
-              type: 'tuple',
+              "internalType": "struct UnipassUtils.PubKey",
+              "name": "key",
+              "type": "tuple"
             },
             {
-              internalType: 'uint256',
-              name: 'timestamp',
-              type: 'uint256',
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
             },
             {
-              internalType: 'bool',
-              name: 'resetKeys',
-              type: 'bool',
-            },
+              "internalType": "bool",
+              "name": "resetKeys",
+              "type": "bool"
+            }
           ],
-          internalType: 'struct Entry.PendingState',
-          name: 'pendingState',
-          type: 'tuple',
-        },
-        {
-          internalType: 'bytes',
-          name: 'source',
-          type: 'bytes',
-        },
+          "internalType": "struct Entry.PendingState",
+          "name": "",
+          "type": "tuple"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'bytes32',
-          name: 'hash',
-          type: 'bytes32',
-        },
-        {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        }
       ],
-      name: 'verify',
-      outputs: [
+      "name": "isUseEmailRegister",
+      "outputs": [
         {
-          internalType: 'bool',
-          name: '',
-          type: 'bool',
-        },
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'registerEmail',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
         },
         {
-          internalType: 'bytes',
-          name: 'message',
-          type: 'bytes',
+          "internalType": "uint256",
+          "name": "sigKeyType",
+          "type": "uint256"
         },
         {
-          internalType: 'uint256',
-          name: 'sigKeyType',
-          type: 'uint256',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sigKey',
-          type: 'bytes',
-        },
-        {
-          internalType: 'bytes',
-          name: 'sig',
-          type: 'bytes',
-        },
+          "internalType": "bytes",
+          "name": "sigKey",
+          "type": "bytes"
+        }
       ],
-      name: 'verifyUserSig',
-      outputs: [
+      "name": "isUserKey",
+      "outputs": [
         {
-          internalType: 'bool',
-          name: '',
-          type: 'bool',
-        },
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
+    {
+      "inputs": [],
+      "name": "logic",
+      "outputs": [
+        {
+          "internalType": "contract Logic",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timeLockSwitch",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalUsers",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "users",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "originUsername",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "isUseEmailRegister",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "quickLogin",
+          "type": "bool"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "threshold",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32[]",
+              "name": "emails",
+              "type": "bytes32[]"
+            }
+          ],
+          "internalType": "struct Entry.RecoveryEmail",
+          "name": "recoveryEmails",
+          "type": "tuple"
+        },
+        {
+          "internalType": "address",
+          "name": "assetContractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "isRecovering",
+          "type": "bool"
+        },
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "keyType",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "key",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct UnipassUtils.PubKey",
+              "name": "key",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "resetKeys",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct Entry.PendingState",
+          "name": "pendingState",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "source",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "registerEmail",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "message",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sigKeyType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "sigKey",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        }
+      ],
+      "name": "verifyUserSig",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
   ],
 };
