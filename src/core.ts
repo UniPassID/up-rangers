@@ -354,7 +354,7 @@ export class UPRangers {
       assetContract: this._assetContract.options.address,
       registerEmail: this._email,
       nonce: nonce.toString(),
-      token,
+      token: token.address,
       to,
       amount,
       feeToken: feeToken.address,
