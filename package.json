@@ -1,6 +1,6 @@
 {
   "name": "up-rangers",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "unipass sdk for rangers",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -42,7 +42,7 @@
   "dependencies": {
     "@rangersprotocolweb3/web3": "^1.0.8",
     "axios": "^0.26.0",
-    "up-core-test": "/Users/johnz/work/unipass-v3/up-core"
+    "up-core-test": "^0.1.8"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
