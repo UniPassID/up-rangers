@@ -8079,10 +8079,10 @@ unpipe@1.0.0, unpipe@~1.0.0:
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
 
-up-core-test@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/up-core-test/-/up-core-test-0.1.8.tgz#5cc8da699d14a11d075591400eaf559e21560b32"
-  integrity sha512-g7BHsE7BZrm69jWw3XeD/D0qRRDWyvf3CRYli3gxYkedxFGLq+AtTjIu+CEn2AXo0lpf4WvGzsmXWd7m5j6Zvg==
+up-core-test@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/up-core-test/-/up-core-test-0.1.9.tgz#9827fd2dc0baef103f329fda9d2b0da56ae16f4b"
+  integrity sha512-NAAJrFm7XnmRzxRhQTlc3R7YnXPrHMu008tKnNveFlj9/zjkVJjq0hN1+NmUlCSm5W0VqBWcPPb7F7zy5Svd7w==
 
 update-notifier@^5.0.1:
   version "5.1.0"
