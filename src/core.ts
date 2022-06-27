@@ -18,6 +18,8 @@ import { ASSET_ABI } from './abi/asset.abi';
 import Web3 from '@rangersprotocolweb3/web3';
 import { Contract } from 'web3-eth-contract';
 import { convertUPAuthResponse, emailHash, submitTransaction } from './utils';
+
+const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 export enum ActionType {
   TRANSFER_ETH = 0,
   TRANSFER_TOKEN,
@@ -33,7 +35,7 @@ export interface RangersTxOption {
 
 const DEFAULT_FEE_OPTION: RangersTxOption = {
   feeToken: {
-    address: '0x0000000000000000000000000000000000000000',
+    address: ZERO_ADDRESS,
     symbol: 'RPG',
     decimals: 18,
   },
@@ -103,10 +105,6 @@ export class UPRangers {
     this._entryContract = new this._web3.eth.Contract(
       ENTRY_ABI.abi as AbiItem[],
       this._config.userInfoContract
-    );
-
-    this._web3.eth.accounts.wallet.add(
-      '0x79682c20bbcaf7fcf18eb0c69b133c872227ceb88971090e7f2242c80cd54d18'
     );
   }
 
@@ -190,12 +188,25 @@ export class UPRangers {
     console.log('[up-rangers] this.email hash', this._email);
 
     // call userInfo contract to get user asset contract
-    const { assetContractAddress } = await this._entryContract.methods
-      .users(this._email)
-      .call(this.getOption());
-    if (assetContractAddress === '0x0000000000000000000000000000000000000000') {
-      throw new Error(`UniPass User ${username} not found`);
+    let tryTimes = 0;
+    let assetContractAddress = ZERO_ADDRESS;
+    while (tryTimes++ < 3) {
+      console.log(`[up-rangers] fetch asset address times = ${tryTimes}`);
+      const user = await this._entryContract.methods
+        .users(this._email)
+        .call(this.getOption());
+      assetContractAddress = user.assetContractAddress;
+
+      if (assetContractAddress !== ZERO_ADDRESS || tryTimes >= 3) break;
+
+      // sleep 1 second
+      await new Promise((resolve) => setTimeout(resolve, 1000));
     }
+
+    if (assetContractAddress === ZERO_ADDRESS) {
+      throw new Error(`UniPass User ${username} not found, try again later`);
+    }
+
     this._assetContract = new this._web3.eth.Contract(
       ASSET_ABI.abi as AbiItem[],
       assetContractAddress
